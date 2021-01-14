@@ -18,7 +18,7 @@ type MoveOptions struct {
 func NewCmdMove(c *CommandOptions) *cobra.Command {
 	opts := &MoveOptions{CommandOptions: c}
 	var cmd = &cobra.Command{
-		Use:   "move <sheet-name> <index> <spread-id>",
+		Use:   "move <sheet-id> <index> {<spread-id> | <url>}",
 		Short: "Move a sheet",
 		Example: heredoc.Doc(`
 		$ gospread sheets move sheet1 0 abc1234
