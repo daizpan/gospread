@@ -6,6 +6,7 @@ import (
 	"io/ioutil"
 	"sort"
 
+	"github.com/mattn/natural"
 	"golang.org/x/oauth2/google"
 	"google.golang.org/api/option"
 	"google.golang.org/api/sheets/v4"
@@ -205,7 +206,7 @@ func (g *GoSpread) SortSheets(spreadsheetId string) error {
 	}
 
 	sort.Slice(spread.Sheets, func(i, j int) bool {
-		return spread.Sheets[i].Properties.Title < spread.Sheets[j].Properties.Title
+		return natural.NaturalComp(spread.Sheets[i].Properties.Title, spread.Sheets[j].Properties.Title) < 0
 	})
 
 	req := []*sheets.Request{}
