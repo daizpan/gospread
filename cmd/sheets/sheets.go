@@ -21,6 +21,7 @@ func NewCmdSheets(c *CommandOptions) *cobra.Command {
 		NewCmdCreate(c),
 		NewCmdSort(c),
 		NewCmdMove(c),
+		NewCmdDeleteall(c),
 	)
 	return cmd
 }
