@@ -1,6 +1,7 @@
 package cmd
 
 import (
+	"fmt"
 	"os"
 
 	"github.com/daizpan/gospread"
@@ -8,11 +9,15 @@ import (
 	"github.com/spf13/cobra"
 )
 
+var Version = "DEV"
+var Date = ""
+
 // rootCmd represents the base command when called without any subcommands
 func NewCmdRoot() *cobra.Command {
 	opts := &sheets.CommandOptions{}
+	version := fmt.Sprintf("%s (%s)", Version, Date)
 	cmd := &cobra.Command{
-		Version: "0.1.0",
+		Version: version,
 		Use:     "gospread",
 		Short:   "Manage a Google Spread Sheet",
 		PersistentPreRunE: func(cmd *cobra.Command, args []string) error {
