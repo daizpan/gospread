@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/daizpan/gospread"
-	"github.com/daizpan/gospread/cmd/sheets"
+	"github.com/duhshu/gospread"
+	"github.com/duhshu/gospread/cmd/sheets"
 	"github.com/spf13/cobra"
 )
 

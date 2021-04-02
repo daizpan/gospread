@@ -1,4 +1,4 @@
-module github.com/daizpan/gospread
+module github.com/duhshu/gospread
 
 go 1.15
 

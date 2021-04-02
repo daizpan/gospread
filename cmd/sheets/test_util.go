@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"os"
 
-	"github.com/daizpan/gospread"
+	"github.com/duhshu/gospread"
 	"github.com/spf13/cobra"
 )
 

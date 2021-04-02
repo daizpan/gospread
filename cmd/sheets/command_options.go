@@ -4,7 +4,7 @@ import (
 	"net/url"
 	"regexp"
 
-	"github.com/daizpan/gospread"
+	"github.com/duhshu/gospread"
 )
 
 type CommandOptions struct {

@@ -8,12 +8,12 @@ GoSpread wraps `google.golang.org/api/sheets/v4`.
 ## Installing
 Use `go get` to install the library.
 ```sh
-go get -u github.com/daizpan/gospread
+go get -u github.com/duhshu/gospread
 ```
 
 Install `gospraed` command.
 ```sh
-go get github.com/daizpan/gospread/cmd/gospread
+go get github.com/duhshu/gospread/cmd/gospread
 ``` 
 
 
@@ -28,7 +28,7 @@ gospread sheets create sheet-name <spread-sheet-id>
 
 your application.
 ```go
-import "github.com/daizpan/gospread"
+import "github.com/duhshu/gospread"
 
 func main() {
 	g, err := gospread.NewGoSpreadWithCredentialFile("credential.json")
@@ -43,8 +43,8 @@ func main() {
 
 ## Author
 
-[daizpan](https://github.com/daizpan)
+[duhshu](https://github.com/duhshu)
 
 ## Licence
 
-[MIT](https://github.com/daizpan/gospread/blob/main/LICENSE)
+[MIT](https://github.com/duhshu/gospread/blob/main/LICENSE)
