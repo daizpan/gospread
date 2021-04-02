@@ -199,6 +199,10 @@ func (g *GoSpread) BatchUpdate(spreadsheetId string, req *sheets.BatchUpdateSpre
 	return g.Spreadsheets.BatchUpdate(spreadsheetId, req).Do()
 }
 
+func (g *GoSpread) BatchUpdateValues(spreadsheetId string, batchupdatevaluesrequest *sheets.BatchUpdateValuesRequest) (*sheets.BatchUpdateValuesResponse, error) {
+	return g.Spreadsheets.Values.BatchUpdate(spreadsheetId, batchupdatevaluesrequest).Do()
+}
+
 func (g *GoSpread) SortSheets(spreadsheetId string) error {
 	spread, err := g.GetSpreadSheet(spreadsheetId)
 	if err != nil {
